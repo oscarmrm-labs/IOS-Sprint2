@@ -1,21 +1,21 @@
 import Foundation
 
 class Octagon: Polygon {
-    var side: String
-    var apothem: String
+    var side: Double
+    var apothem: Double
     
-    init(side: String, apothem: String) {
+    init(side: Double, apothem: Double) {
         self.side = side
         self.apothem = apothem
     }
     
-    private var nSides: Int = 8
+    private let nSides: Int = 8
     
     func calculateArea() -> Double {
-        return 0.0
+        return regularPolygonArea(apothem: side, perimeter: calculatePerimeter())
     }
     func calculatePerimeter() -> Double {
-        return 0.0
+        regularPolygonPerimeter(side: side, nSides: nSides)
     }
     func buildAreaFormula() -> String {
         return ""
