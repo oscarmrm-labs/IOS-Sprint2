@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		558763762BECD4D30073F9EC /* Sprint2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558763752BECD4D30073F9EC /* Sprint2App.swift */; };
-		558763782BECD4D30073F9EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558763772BECD4D30073F9EC /* ContentView.swift */; };
+		558763782BECD4D30073F9EC /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558763772BECD4D30073F9EC /* MainScreen.swift */; };
 		5587637A2BECD4D30073F9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558763792BECD4D30073F9EC /* Assets.xcassets */; };
 		5587637D2BECD4D30073F9EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5587637C2BECD4D30073F9EC /* Preview Assets.xcassets */; };
+		558763872BECDD170073F9EC /* Octagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558763862BECDD170073F9EC /* Octagon.swift */; };
+		558763892BECDE780073F9EC /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558763882BECDE780073F9EC /* DetailScreen.swift */; };
+		55C985112BEDA54000CF3B7A /* PolygonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C985102BEDA54000CF3B7A /* PolygonType.swift */; };
+		55C985142BEDA8FF00CF3B7A /* Pentagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C985132BEDA8FE00CF3B7A /* Pentagon.swift */; };
+		55C985162BEDA91200CF3B7A /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C985152BEDA91200CF3B7A /* Triangle.swift */; };
+		55C985182BEDABD300CF3B7A /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C985172BEDABD300CF3B7A /* Polygon.swift */; };
+		55C9851A2BEDAE6F00CF3B7A /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C985192BEDAE6F00CF3B7A /* Calculate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		558763722BECD4D30073F9EC /* Sprint2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprint2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558763752BECD4D30073F9EC /* Sprint2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint2App.swift; sourceTree = "<group>"; };
-		558763772BECD4D30073F9EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		558763772BECD4D30073F9EC /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		558763792BECD4D30073F9EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5587637C2BECD4D30073F9EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		558763862BECDD170073F9EC /* Octagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octagon.swift; sourceTree = "<group>"; };
+		558763882BECDE780073F9EC /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		55C985102BEDA54000CF3B7A /* PolygonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonType.swift; sourceTree = "<group>"; };
+		55C985132BEDA8FE00CF3B7A /* Pentagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pentagon.swift; sourceTree = "<group>"; };
+		55C985152BEDA91200CF3B7A /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		55C985172BEDABD300CF3B7A /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		55C985192BEDAE6F00CF3B7A /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		558763742BECD4D30073F9EC /* Sprint2 */ = {
 			isa = PBXGroup;
 			children = (
+				558763852BECDC7F0073F9EC /* ui */,
+				558763842BECDC790073F9EC /* domain */,
+				558763832BECDC540073F9EC /* data */,
 				558763752BECD4D30073F9EC /* Sprint2App.swift */,
-				558763772BECD4D30073F9EC /* ContentView.swift */,
 				558763792BECD4D30073F9EC /* Assets.xcassets */,
 				5587637B2BECD4D30073F9EC /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				5587637C2BECD4D30073F9EC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		558763832BECDC540073F9EC /* data */ = {
+			isa = PBXGroup;
+			children = (
+				55C985102BEDA54000CF3B7A /* PolygonType.swift */,
+				55C985192BEDAE6F00CF3B7A /* Calculate.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		558763842BECDC790073F9EC /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				558763862BECDD170073F9EC /* Octagon.swift */,
+				55C985132BEDA8FE00CF3B7A /* Pentagon.swift */,
+				55C985152BEDA91200CF3B7A /* Triangle.swift */,
+				55C985172BEDABD300CF3B7A /* Polygon.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		558763852BECDC7F0073F9EC /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				558763772BECD4D30073F9EC /* MainScreen.swift */,
+				558763882BECDE780073F9EC /* DetailScreen.swift */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558763782BECD4D30073F9EC /* ContentView.swift in Sources */,
+				55C985182BEDABD300CF3B7A /* Polygon.swift in Sources */,
+				558763782BECD4D30073F9EC /* MainScreen.swift in Sources */,
+				55C985142BEDA8FF00CF3B7A /* Pentagon.swift in Sources */,
+				55C9851A2BEDAE6F00CF3B7A /* Calculate.swift in Sources */,
+				558763892BECDE780073F9EC /* DetailScreen.swift in Sources */,
+				558763872BECDD170073F9EC /* Octagon.swift in Sources */,
+				55C985112BEDA54000CF3B7A /* PolygonType.swift in Sources */,
+				55C985162BEDA91200CF3B7A /* Triangle.swift in Sources */,
 				558763762BECD4D30073F9EC /* Sprint2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

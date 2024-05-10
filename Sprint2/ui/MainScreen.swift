@@ -1,20 +1,33 @@
-//
-//  ContentView.swift
-//  Sprint2
-//
-//  Created by Óscar M on 9/5/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView{
+            VStack {
+                
+                NavigationLink(destination: DetailScreen(type: PolygonType.Triangle.rawValue)){
+                    Image(PolygonType.Triangle.rawValue)
+                        .resizable()
+                        .frame(width: 120, height: 120)
+                }
+                Text("Triangulo")
+                
+                NavigationLink(destination: DetailScreen(type: PolygonType.Triangle.rawValue)){
+                    Image(PolygonType.Pentagon.rawValue)
+                        .resizable()
+                        .frame(width: 120, height: 120)
+                }
+                Text("Pentagono")
+                
+                NavigationLink(destination: DetailScreen(type: PolygonType.Triangle.rawValue)){
+                    Image(PolygonType.Octagon.rawValue)
+                        .resizable()
+                        .frame(width: 120, height: 120)
+                }
+                Text("Octogono")
+                
+                Spacer()
+            }
         }
-        .padding()
     }
 }

@@ -1,7 +1,7 @@
 import Foundation
 
-enum PolygonEnum{
-    case Triangle
-    case Pentagon
-    case Octagon
+enum PolygonType: String{
+    case Triangle = "Triangle"
+    case Pentagon = "Pentagon"
+    case Octagon = "Octagon"
 }

@@ -1,8 +1,8 @@
-//
-//  Polygon.swift
-//  Sprint2
-//
-//  Created by Óscar M on 10/5/24.
-//
-
 import Foundation
+
+protocol Polygon{
+    func calculateArea() -> Double
+    func calculatePerimeter() -> Double
+    func buildAreaFormula() -> String
+    func buildPerimeterFormula() -> String
+}
