@@ -12,15 +12,15 @@ class Octagon: Polygon {
     private let nSides: Int = 8
     
     func calculateArea() -> Double {
-        return regularPolygonArea(apothem: side, perimeter: calculatePerimeter())
+        return regularPolygonArea(apothem: apothem, perimeter: calculatePerimeter())
     }
     func calculatePerimeter() -> Double {
         regularPolygonPerimeter(side: side, nSides: nSides)
     }
     func buildAreaFormula() -> String {
-        return ""
+        return regularPolygonAreaFormule(apothem: apothem, perimeter: calculatePerimeter())
     }
     func buildPerimeterFormula() -> String {
-        return ""
+        return regularPolygonPerimeterFormule(side: side, nSides: nSides)
     }
 }

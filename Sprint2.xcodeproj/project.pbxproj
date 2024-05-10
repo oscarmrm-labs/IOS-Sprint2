@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556E03202BEE31A10042EC42 /* PolygonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556E031F2BEE31A10042EC42 /* PolygonFactory.swift */; };
 		558763762BECD4D30073F9EC /* Sprint2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558763752BECD4D30073F9EC /* Sprint2App.swift */; };
 		558763782BECD4D30073F9EC /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558763772BECD4D30073F9EC /* MainScreen.swift */; };
 		5587637A2BECD4D30073F9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558763792BECD4D30073F9EC /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		556E031F2BEE31A10042EC42 /* PolygonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonFactory.swift; sourceTree = "<group>"; };
 		558763722BECD4D30073F9EC /* Sprint2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprint2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558763752BECD4D30073F9EC /* Sprint2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint2App.swift; sourceTree = "<group>"; };
 		558763772BECD4D30073F9EC /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				55C985132BEDA8FE00CF3B7A /* Pentagon.swift */,
 				55C985152BEDA91200CF3B7A /* Triangle.swift */,
 				55C985172BEDABD300CF3B7A /* Polygon.swift */,
+				556E031F2BEE31A10042EC42 /* PolygonFactory.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C985182BEDABD300CF3B7A /* Polygon.swift in Sources */,
+				556E03202BEE31A10042EC42 /* PolygonFactory.swift in Sources */,
 				558763782BECD4D30073F9EC /* MainScreen.swift in Sources */,
 				55C985142BEDA8FF00CF3B7A /* Pentagon.swift in Sources */,
 				55C9851A2BEDAE6F00CF3B7A /* Calculate.swift in Sources */,

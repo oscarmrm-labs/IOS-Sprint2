@@ -12,14 +12,14 @@ struct ContentView: View {
                 }
                 Text("Triangulo")
                 
-                NavigationLink(destination: DetailScreen(type: PolygonType.Triangle.rawValue)){
+                NavigationLink(destination: DetailScreen(type: PolygonType.Pentagon.rawValue)){
                     Image(PolygonType.Pentagon.rawValue)
                         .resizable()
                         .frame(width: 120, height: 120)
                 }
                 Text("Pentagono")
                 
-                NavigationLink(destination: DetailScreen(type: PolygonType.Triangle.rawValue)){
+                NavigationLink(destination: DetailScreen(type: PolygonType.Octagon.rawValue)){
                     Image(PolygonType.Octagon.rawValue)
                         .resizable()
                         .frame(width: 120, height: 120)
